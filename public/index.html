@@ -21,28 +21,28 @@
         <section class="m-2 lg:w-1/2 ">
           <div class="bill__input my-4 relative">
             <label class="block my-2 text-darkGrayishCyan text-sm font-bold" for="">Bill</label>
-            <small class="absolute text-red-500 top-2 right-1 invisible">Can't be zero</small>
+            <small class="error__msg__bill absolute text-red-500 top-2 text-xs right-1 invisible">Can't be zero</small>
             <img class="absolute top-11 left-3" src="/images/icon-dollar.svg" alt="">
-            <input class=" w-full bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan text-right text-lg outline-none border-2 focus:border-strongCyan" placeholder="0" type="text" name="" id="">
+            <input class="input__bill w-full bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan text-right text-lg outline-none border-2 focus:border-strongCyan" placeholder="0" type="text" name="" id="">
           </div>
           <div>
             <div>
               <h1 class="text-darkGrayishCyan text-sm font-bold">Select Tip %</h1>
             </div>
             <div class="grid grid-cols-2 grid-rows-3 gap-4  py-4 text-lg font-bold text-white lg:grid-cols-3 lg:grid-rows-2 ">
-              <div class="bg-veryDarkCyan cursor-pointer hover:bg-strongCyan rounded text-center p-2">5%</div>
-              <div class="bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">10%</div>
-              <div class="bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">15%</div>
-              <div class="bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">25%</div>
-              <div class="bg-veryDarkCyan  cursor-pointer rounded hover:bg-strongCyan text-center p-2">50%</div>
-              <input class="bg-vlightGrayishCyan outline-none border-2 focus:border-strongCyan rounded text-right p-2 text-darkGrayishCyan font-bold " placeholder="Custom">
+              <div class="tip__five bg-veryDarkCyan cursor-pointer hover:bg-strongCyan rounded text-center p-2">5%</div>
+              <div class="tip__ten bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">10%</div>
+              <div class="tip__fifteen bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">15%</div>
+              <div class="tip__twentyFive bg-veryDarkCyan cursor-pointer rounded hover:bg-strongCyan text-center p-2">25%</div>
+              <div class="tip__fifty bg-veryDarkCyan  cursor-pointer rounded hover:bg-strongCyan text-center p-2">50%</div>
+              <input class="input__custom bg-vlightGrayishCyan outline-none border-2 focus:border-strongCyan rounded text-right p-2 text-darkGrayishCyan font-bold " placeholder="Custom">
             </div>
           </div>
           <div class="bill__people p-1 my-1 relative">
             <label class="block text-darkGrayishCyan text-sm font-bold" for="">Number of People</label>
             <img class="absolute top-12 left-4" src="/images/icon-person.svg" alt="">
-            <small class="absolute text-red-500 top-5 right-2 invisible">Can't be zero</small>
-            <input class="w-full text-lg mt-2 text-right bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan outline-none border-2 focus:border-strongCyan" placeholder="0" type="text" name="" id="">
+            <small class="error__msg__nPeople absolute text-xs text-red-500 top-2 right-2 invisible">Can't be zero</small>
+            <input class="input__people w-full text-lg mt-2 text-right bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan outline-none border-2 focus:border-strongCyan  " placeholder="0" type="text" name="" id="">
           </div>
         </section>
         <section class="bg-veryDarkCyan p-6 rounded-xl font-mono lg:ml-6 lg:w-1/2">
@@ -51,17 +51,17 @@
               <h1 class="text-white text-md lg:text-xl">Tip Amount</h1>
               <p class="text-darkGrayishCyan text-xs lg:text-base"> / person</p>
             </div>
-            <div class="text-strongCyan font-bold text-2xl font-spaceMono">$0.00</div>
+            <div class="tip__amt text-strongCyan font-bold text-2xl font-spaceMono">$0.00</div>
           </div>
           <div class="flex mb-6 justify-between lg:mt-10">
             <div>
               <h1 class="text-white text-md lg:text-xl">Total</h1>
               <p class="text-darkGrayishCyan text-xs lg:text-base">/ person</p>
             </div>
-            <div class="text-strongCyan font-bold text-2xl font-spaceMono">$0.00</div>
+            <div class="total__amt text-strongCyan font-bold text-2xl font-spaceMono">$0.00</div>
           </div>
           <div class="px-1 lg:mt-36">
-            <button class="block mx-auto w-full bg-strongCyan p-2 text-veryDarkCyan font-bold rounded text-lg hover:bg-lightGrayishCyan" type="reset">RESET</button>
+            <button class="btn__reset block mx-auto w-full bg-strongCyan p-2 text-veryDarkCyan font-bold rounded text-lg hover:bg-lightGrayishCyan" type="reset">RESET</button>
           </div>
         </section>
       </article>
