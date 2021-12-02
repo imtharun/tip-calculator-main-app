@@ -3,18 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Tip calculator app</title>
-    <link rel="stylesheet" href="/public/style.css" />
+    <title> Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="w-full font-spaceMono bg-lightGrayishCyan">
     <div>
-      <img class="block mx-auto mt-4 bg-no-repeat bg-bottom lg:mt-20" src="/images/logo.svg" alt="Logo">
+      <img class="block mx-auto mt-4 bg-no-repeat bg-bottom lg:mt-20" src="logo.svg" alt="Logo">
     </div>
     <main class="flex items-center justify-center  mt-8">
       <article class="bg-white w-80 p-6 rounded-2xl lg:flex lg:w-3/5">
@@ -22,7 +16,7 @@
           <div class="bill__input my-4 relative">
             <label class="block my-2 text-darkGrayishCyan text-sm font-bold" for="">Bill</label>
             <small class="error__msg__bill absolute text-red-500 top-2 text-xs right-1 invisible">Can't be zero</small>
-            <img class="absolute top-11 left-3" src="/images/icon-dollar.svg" alt="">
+            <img class="absolute top-11 left-3" src="icon-dollar.svg" alt="">
             <input class="input__bill w-full bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan text-right text-lg outline-none border-2 focus:border-strongCyan" placeholder="0" type="text" name="" id="">
           </div>
           <div>
@@ -40,7 +34,7 @@
           </div>
           <div class="bill__people p-1 my-1 relative">
             <label class="block text-darkGrayishCyan text-sm font-bold" for="">Number of People</label>
-            <img class="absolute top-12 left-4" src="/images/icon-person.svg" alt="">
+            <img class="absolute top-12 left-4" src="icon-person.svg" alt="">
             <small class="error__msg__nPeople absolute text-xs text-red-500 top-2 right-2 invisible">Can't be zero</small>
             <input class="input__people w-full text-lg mt-2 text-right bg-vlightGrayishCyan p-2 rounded font-bold text-veryDarkCyan outline-none border-2 focus:border-strongCyan  " placeholder="0" type="text" name="" id="">
           </div>
@@ -66,8 +60,6 @@
         </section>
       </article>
     </main>
-    <script src="/public/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-
-<!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /person Total / person Reset -->
